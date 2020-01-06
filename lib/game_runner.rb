@@ -2,6 +2,7 @@ require_relative './environment_builder'
 
 class Game
   attr_accessor :environment
+  attr_reader :deaths, :survivors
 
   def initialize(x)
     @environment = Environment.new(x)
@@ -15,7 +16,7 @@ class Game
 
   def take_turn(color)
     if @environment.line.length != 0 
-      if @environment.line.shift != x.downcase
+      if @environment.line.shift != color.downcase
         @deaths += 1
         @survivors -= 1
       end

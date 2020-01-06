@@ -15,4 +15,12 @@ describe "initialize game" do
     expect(number).to eq(1)
   end
   
+  it "takes turn and removes person from line, and detects whether person to die or survive" do 
+    game = Game.new(2)
+    game.environment.line = ['blue', 'blue']
+    game.take_turn('red')
+    expect(game.environment.line.length).to eq(1)
+    expect(game.deaths).to eq(1)
+    expect(game.survivors).to eq(1)
+  end
 end
