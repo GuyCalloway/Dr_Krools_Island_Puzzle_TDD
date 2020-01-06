@@ -1,8 +1,15 @@
 require 'environment_builder'
 
 describe "creates hash of hat colours" do
-  it "creates random number" do
-    environment = Environment.new
-    expect(environment.population).to be_truthy
+ 
+  it "creates line of 0s(no color yet)" do
+    environment = Environment.new(15)
+    expect(environment.line).to be_truthy
+  end
+
+  it "assigns hats to line" do
+    environment = Environment.new(15)
+    environment.assign_hats
+    expect(environment.line).not_to include('hair')
   end
 end
