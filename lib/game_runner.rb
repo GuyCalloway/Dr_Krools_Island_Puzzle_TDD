@@ -4,10 +4,9 @@ class Game
   attr_accessor :environment
   attr_reader :deaths, :survivors
 
-  def initialize(x)
-    @environment = Environment.new(x)
+  def initialize(environment)
+    @environment = environment
     @deaths = 0
-    @survivors = x
   end
 
   def count(color)
@@ -18,7 +17,6 @@ class Game
     if @environment.line.length != 0 
       if @environment.line.shift != color.downcase
         @deaths += 1
-        @survivors -= 1
       end
     end
   end
