@@ -2,11 +2,11 @@ class Environment
   attr_reader :line
 
   def initialize(population)
-    @line = Array.new(population, 'hair')
+    @line = assign_hats(Array.new(population, 'no hat'))
   end
 
-  def assign_hats
-     @line.map! do |person| 
+  def assign_hats(array)
+     array.map do |person| 
                   if rand(2) == 1
                     person = 'blue'
                   else

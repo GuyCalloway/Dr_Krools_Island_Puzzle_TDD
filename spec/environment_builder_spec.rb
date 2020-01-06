@@ -9,7 +9,6 @@ describe "creates hash of hat colours" do
 
   it "assigns hats to line" do
     environment = Environment.new(15)
-    environment.assign_hats
-    expect(environment.line).not_to include('hair')
+    expect(environment.line).not_to include('no hat')
   end
 end
