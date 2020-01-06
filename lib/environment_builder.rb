@@ -16,9 +16,14 @@ class Environment
                 end
   end
 
-  def counter(input)
+  def counter(colour, number)
     count = 0
-    @line[1..@line.length].each { |x| if x == input
+
+    if colour == 'see all'
+      return @line
+    end
+
+    @line[1..number].each { |x| if x == colour
                        count += 1
                      end
                 }

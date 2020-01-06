@@ -1,7 +1,7 @@
 require 'game_runner'
 require 'environment_builder'
 
-describe "initialize game" do
+describe "game logic" do
 
   before(:each) do
     env = Environment.new(2)

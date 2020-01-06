@@ -1,5 +1,3 @@
-require_relative './environment_builder'
-
 class Game
   attr_accessor :environment
   attr_reader :deaths, :survivors
@@ -9,8 +7,8 @@ class Game
     @deaths = 0
   end
 
-  def count(color)
-    return @environment.counter(color)
+  def count(color, number = @environment.line.length)
+    return @environment.counter(color, number)
   end
 
   def take_turn(color)
