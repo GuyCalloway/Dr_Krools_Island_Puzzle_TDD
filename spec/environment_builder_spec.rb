@@ -7,6 +7,11 @@ describe "creates hash of hat colours" do
     expect(environment.line).to be_truthy
   end
 
+  it "creates line of 0s(no color yet)" do
+    environment = Environment.new(15)
+    expect(environment.turn).to be(0)
+  end
+
   it "assigns hats to line" do
     environment = Environment.new(15)
     expect(environment.line).not_to include('no hat')
