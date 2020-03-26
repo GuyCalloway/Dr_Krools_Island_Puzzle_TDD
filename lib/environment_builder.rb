@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Environment
   attr_accessor :line, :turn
 
@@ -7,26 +9,23 @@ class Environment
   end
 
   def assign_hats(array)
-     array.map do |person| 
-                  if rand(2) == 1
-                    person = 'blue'
-                  else
-                    person = 'red'
-                  end
-                end
+    array.map do |_person|
+      person = if rand(2) == 1
+                 'blue'
+               else
+                 'red'
+               end
+    end
   end
 
   def counter(colour, number)
     count = 0
 
-    if colour == 'see all'
-      return @line
-    end
+    return @line if colour == 'see all'
 
-    @line[1..number].each { |x| if x == colour
-                       count += 1
-                     end
-                }
-    return count
+    @line[1..number].each do |x|
+      count += 1 if x == colour
+    end
+    count
   end
 end
