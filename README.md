@@ -2,7 +2,7 @@
 
 Guess what hat you’re wearing – or die!
 
-Fiendish Dr Krool has captured a large number of tourists on his island (number/gender does not matter).
+Fiendish Dr Krool has captured a large number of tourists on his island (number can be selected at the beginning).
 
 He says he is going to line them up in a queue so that each of them can only see the captives in front of them and cannot see anyone behind them.  
 
@@ -15,7 +15,9 @@ Those who guess the correct colour of hat will live, those who guess the wrong c
 He allows the tourists to mingle together for an hour and enjoy a glass of his famous punch - and then it will be time to line up! 
 During this time you are designated the leader and must come up with a plan to save as many people as possible!!
 
-What is your strategy?
+What is your strategy? 
+
+Extra info: Random selection will give a death rate of 50% but its possible to save EVERY person bar 1 --> who will have a 50/50 chance of dieing. 
 
 
 
