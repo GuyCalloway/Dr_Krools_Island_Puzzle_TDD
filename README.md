@@ -19,6 +19,7 @@ What is your strategy?
 
 Extra info: Random selection will give a death rate of 50% but its possible to save EVERY person bar 1 --> who will have a 50/50 chance of dieing. 
 
+Tip: Whats a property of numbers you learn in primary school?
 
 
 
