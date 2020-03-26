@@ -13,10 +13,9 @@ He will then instruct everyone to guess what hat they are wearing – STARTING W
 Those who guess the correct colour of hat will live, those who guess the wrong colour of hat will die. They will not be aware whether the previous tourists in the line are to be killed or not. 
 
 He allows the tourists to mingle together for an hour and enjoy a glass of his famous punch - and then it will be time to line up! 
+During this time you are designated the leader and must come up with a plan to save as many people as possible!!
 
-The punch is good but they are feeling pretty gloomy – most reckon that it’ll be just chance and so probably half of them are for it.   
-
-But luckily there is a serious coder among them.  She says that if they do what she suggests she can save them all – or maybe lose just one of their number. What is her strategy? 
+What is your strategy?
 
 
 
