@@ -23,8 +23,6 @@ class DrKroolsIsland < Sinatra::Base
   get '/game' do
     session[:game] = Game.new(Environment.new(session[:number1]))
     @game = session[:game]
-    p @game.deaths
-    p @game.environment
     erb :game
   end
 
