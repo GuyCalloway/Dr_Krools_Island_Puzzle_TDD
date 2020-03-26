@@ -4,7 +4,7 @@ class Environment
   attr_accessor :line, :turn
 
   def initialize(population)
-    @line = assign_hats(Array.new(population, 'no hat'))
+    @line = assign_hats(Array.new(population + 1, 'no hat'))
     @turn = 0
   end
 
